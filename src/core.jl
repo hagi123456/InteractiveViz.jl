@@ -471,7 +471,7 @@ end
 
 function formatnum(x)
   x == 0 && return "0"
-  abs(x) > 10000 && return @sprintf("%.0e", x)
+  abs(x) > 10000 && return @sprintf("%.3e", x)
   abs(x) >= 100 && return @sprintf("%.0f", x)
   abs(x) >= 10 && return @sprintf("%.1f", x)
   abs(x) >= 1 && return @sprintf("%.2f", x)
